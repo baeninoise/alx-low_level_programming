@@ -1,0 +1,12 @@
+#include <stdio.h>
+#include <string.h>
+/**
+ * main - Entry pont
+ *
+ * Return: 1 if success
+ */
+int main(void)
+{
+  printf(2,"and that piece of art is useful\" - Dora Korpar, 2015-10-19"); 
+  return (1);
+}

@@ -1,8 +1,5 @@
 	.file	"main.c"
-	.text
-	.section	.rodata
-.LC0:
-	.string	"Holberton School"
+	.intel_syntax noprefix
 	.text
 	.globl	main
 	.type	main, @function
@@ -10,16 +7,38 @@ main:
 .LFB0:
 	.cfi_startproc
 	endbr64
-	pushq	%rbp
+	push	rbp
 	.cfi_def_cfa_offset 16
 	.cfi_offset 6, -16
-	movq	%rsp, %rbp
+	mov	rbp, rsp
 	.cfi_def_cfa_register 6
-	leaq	.LC0(%rip), %rdi
-	movl	$0, %eax
-	call	printf@PLT
-	movl	$0, %eax
-	popq	%rbp
+	sub	rsp, 64
+	mov	rax, QWORD PTR fs:40
+	mov	QWORD PTR -8[rbp], rax
+	xor	eax, eax
+	movabs	rax, 7881706611452039202
+	movabs	rdx, 2338328219430578541
+	mov	QWORD PTR -64[rbp], rax
+	mov	QWORD PTR -56[rbp], rdx
+	movabs	rax, 7599087837537593708
+	movabs	rdx, 2333181710560748652
+	mov	QWORD PTR -48[rbp], rax
+	mov	QWORD PTR -40[rbp], rdx
+	movabs	rax, 7956009416907322733
+	movabs	rdx, 8824082329461945703
+	mov	QWORD PTR -32[rbp], rax
+	mov	QWORD PTR -24[rbp], rdx
+	mov	DWORD PTR -16[rbp], 6646906
+	lea	rax, -64[rbp]
+	mov	rdi, rax
+	call	puts@PLT
+	mov	eax, 0
+	mov	rcx, QWORD PTR -8[rbp]
+	xor	rcx, QWORD PTR fs:40
+	je	.L3
+	call	__stack_chk_fail@PLT
+.L3:
+	leave
 	.cfi_def_cfa 7, 8
 	ret
 	.cfi_endproc

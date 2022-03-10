@@ -1,7 +1,5 @@
 #include <stdio.h>
-
-
-
+#include <string.h>
 /**
  *
  *  * main - Entry point
@@ -12,12 +10,12 @@
  *
  *     */
 
-int main(void)
+int main()
 
 {
+ char str[]="\"Programming is like building a multilingual puzzle";
+	puts(str);
 
-		printf("Holberton School");
-
-			return (0);
+ return (0);
 
 }

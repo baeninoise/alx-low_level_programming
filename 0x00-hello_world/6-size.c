@@ -1,5 +1,4 @@
-#include <stdio.h>                                                
-#include <conio.h>                                                
+#include <stdio.h>
 /***
  * main - Entry point
  *
@@ -9,8 +8,8 @@ int main(void)                                                    {
 	clrscr();
 	printf("Size of a char:%2d byte(s) \n",sizeof(signed char));
 	printf("Size of an int: %2d byte(s) \n", sizeof(int));      
-	printf("Size of a long int: %2d byte(s) \n", sizeof(int *));
-	printf("Size of a long long int: %2d byte(s) \n", sizeof(lon
+	printf("Size of a long int: %2d byte(s) \n", sizeof(long int));
+	printf("Size of a long long int: %2d byte(s) \n", sizeof(long long int));
 	printf("Size of a float: %2d byte(s) \n",sizeof(float));    
-	getch()                                                   
+	getch();
 } 

@@ -4,7 +4,7 @@
  *
  * Return: Always 0 (Success)
  */
-int main(voip)
+int main(void)
 {
 	char charType;
 	int integerType;

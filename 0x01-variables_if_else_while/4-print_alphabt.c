@@ -10,17 +10,17 @@ int main(void)
 
 	while (x <= 'z')
 	{
+	putchar(x);
+	x++;
 	if (x == 'e')
 	{
-	continue;
+	x++;
 	}
 	if (x == 'q')
 	{
-	continue;
-	}
-	putchar(x);
 	x++;
 	}
 	putchar('\n');
+	}
 	return (0);
 }

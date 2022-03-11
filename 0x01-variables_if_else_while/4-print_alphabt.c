@@ -10,16 +10,16 @@ int main(void)
 
 	while (x <= 'z')
 	{
-	putchar(x);
-	x++;
-	}
 	if (x == 'e')
 	{
-	return (1);
+	continue;
 	}
 	if (x == 'q')
 	{
-	return (1);
+	continue;
+	}
+	putchar(x);
+	x++;
 	}
 	putchar('\n');
 	return (0);

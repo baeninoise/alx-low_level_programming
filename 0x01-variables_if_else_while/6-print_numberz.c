@@ -10,8 +10,8 @@ int x = 0;
 
 	while (x <= 10)
 	{
-	putchar("%d", x);
-	x++;
+	putchar(x);
+	++x;
 	}
 	putchar('\n');
 	return (0);

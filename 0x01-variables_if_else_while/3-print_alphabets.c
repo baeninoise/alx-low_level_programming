@@ -6,7 +6,7 @@
  **/
 int main(void)
 {
-	int x = 'a', y ='A';
+	int x = 'a', y = 'A';
 
 	while (x <= 'z')
 	{

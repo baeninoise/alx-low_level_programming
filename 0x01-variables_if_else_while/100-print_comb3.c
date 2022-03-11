@@ -6,17 +6,21 @@
 #include <stdio.h>
 int main(void)
 {
-int i, l;
-for (i = 48; i <= 57; i++)
+int i;
+int j;
+for (i = 48; i < 57; i++)
 {
-for (l = 48; l <= 57; l++)
+for (j = 49; j <= 57; j++)
+{
+if (j > i)
 {
 putchar(i);
-putchar(l);
-if (i < 57 || l != 57)
+putchar(j);
+if (i < 56)
 {
 putchar(',');
 putchar(' ');
+}
 }
 }
 }

@@ -6,11 +6,11 @@
  **/
 int main(void)
 {
-int x = '^@';
+int x = 0;
 
-	while (x <= '^J')
+	while (x <= 10)
 	{
-	putchar(x);
+	putchar("%c", x);
 	x++;
 	}
 	putchar('\n');

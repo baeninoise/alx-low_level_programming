@@ -5,13 +5,11 @@
  *
  * Return: Always 0 (Success)
  */
-int main(void)
-{
+
  char txt[] = "_putchar\n";
- init i
+ int i;
   for(i = 0; i < 9; i++)
  {
- _putchar(txt[8]);
+ _putchar(txt[9]);
  }
- return (0);                                                                                               
-}
+ return (0);

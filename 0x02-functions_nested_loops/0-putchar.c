@@ -1,6 +1,4 @@
-#include <stdio.h>
 #include "main.h"
-#include <unistd.h>
 #include "_putchar.c"
 /**
  * main - Entry point

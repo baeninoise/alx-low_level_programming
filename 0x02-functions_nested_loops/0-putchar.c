@@ -8,10 +8,11 @@
 int main()
 {
 char txt[] = "_putchar\n";
+int i
 
-for (int i = 0; i < txt.length(); ++i)
+for (i = 0; i < txt.length(); ++i)
 	{
 	_putchar(txt[i]);
 	}
-}
 return (0);
+}

@@ -6,7 +6,7 @@
  * Return: Always 0 (Success)
  */
 
- char txt[] = "_putchar\n";
+char txt[] = "_putchar\n";
 
 {
 for (int i = 0; i < txt.length(); ++i)

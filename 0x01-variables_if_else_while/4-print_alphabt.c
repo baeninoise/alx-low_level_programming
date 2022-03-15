@@ -10,6 +10,7 @@ int main(void)
 
 	while (x <= 'z')
 	{
+<<<<<<< HEAD
 	putchar(x);
 	x++;
 	if (x == 'e')
@@ -18,6 +19,10 @@ int main(void)
 	}
 	if (x == 'q')
 	{
+=======
+	if (x != 'e' && x != 'q')
+	putchar(x);
+>>>>>>> 9e77ce81178baade2ec250b297c984cca819a8c4
 	x++;
 	}
 	putchar('\n');

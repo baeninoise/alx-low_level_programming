@@ -10,6 +10,6 @@
  int i;
   for(i = 0; i < 9; i++)
   {
-   _putchar(txt[9]);
+   _putchar(txt[i]);
   }
  return (0);

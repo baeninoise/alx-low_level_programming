@@ -1,4 +1,6 @@
 #include <stdio.h>
+#include <string.h>
+#include "_putchar.c"
 /**
  * main - Entry point
  *
@@ -6,13 +8,10 @@
  **/
 int main(void)
 {
-	string text = "_putchar";
-	int _putchar(char c);
-	
-	size_t index = 0;
-	for (char c : text) 
+	char txt[] = "_putchar\n";
+
 	{
-	_putchar(char c)
-	} 
+	_putchar(txt[8]);
+	}
 	return (0);
 }

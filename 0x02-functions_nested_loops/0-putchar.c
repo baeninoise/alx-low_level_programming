@@ -8,7 +8,7 @@
 
  char txt[] = "_putchar\n";
 
-	(int i = 0; i < txt.length(); ++i)
+	for (int i = 0; i < txt.length(); ++i)
 	{
 	_putchar(txt[i]);
 	}

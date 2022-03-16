@@ -6,8 +6,12 @@
  * * Return: 0
  * */
 
+<<<<<<< HEAD
 void positive_or_negative()
 	
+=======
+void positive_or_negative(int i)
+>>>>>>> f1bd1a0a8fff736a989f491b36bf936c794e562d
 {
 	int i;
 

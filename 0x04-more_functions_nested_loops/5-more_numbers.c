@@ -1,22 +1,23 @@
 #include "main.h"
 /**
- * main - check the code
+ * more_numbers - prints 10 times the numbers
  *
- * Return: Always 0.
+ * Return: a serie of number 10 times
  */
 void more_numbers(void)
 {
-	int x;
-	int i;
-	
-	x = 0;
-	while(x < 10)
+	int a, b;
+
+	for (a = 0 ; a <= 9 ; a++)
 	{
-		for (i = 48; i < 58; i++)
+		for (b = 0 ; b <= 14 ; b++)
 		{
-		_putchar(i);
+			if (b >= 10)
+			{
+				_putchar(b / 10 + '0');
+			}
+			_putchar(b % 10 + '0');
 		}
-	x++;
+		_putchar('\n');
 	}
-	_putchar('\n');
 }

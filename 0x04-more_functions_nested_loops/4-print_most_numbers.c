@@ -1,11 +1,9 @@
 #include "main.h"
 /**
  * print_most_numbers - prints the numbers, from 0 to 9, followed by a new line
- * @i: the character to print
  *
  * Return: void
  */
-
 void print_most_numbers(void)
 {
 	int i;

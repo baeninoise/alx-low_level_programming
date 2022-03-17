@@ -6,7 +6,7 @@
  * Return: Always 0 (Success)
  **/
 
-int main(void)
+int _isupper(int c);
 {
 	char c;
 	
@@ -15,8 +15,8 @@ int main(void)
 		{
 		return (1)
 		}
-    else
+		else
 		{
-			return (0);
+		return (0);
 		}
 }

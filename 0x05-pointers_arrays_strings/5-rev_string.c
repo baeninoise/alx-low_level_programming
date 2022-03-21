@@ -1,10 +1,8 @@
 #include "main.h"
-#include <stdio.h>
 /**
- * rev_string -  prints a string, followed by a new line
+ * rev_string -  reverse a string
  * @s: menber
  *
- * Return: Always 0
  */
 void rev_string(char *s)
 {

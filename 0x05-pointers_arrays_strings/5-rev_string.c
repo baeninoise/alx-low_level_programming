@@ -13,10 +13,9 @@ int i, j;
 	_putchar(s[i]);
 	}
 	_putchar('\n');
-	j = i;
-	while (i >= j; i > 0)
+	}
+	for (j = i ; s[i] != '\0' ; j--)
 	{
-		i--;
-		_putchar(s[i]);
+		_putchar(s[j]);
 	}
 }

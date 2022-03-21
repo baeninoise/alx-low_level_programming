@@ -7,18 +7,27 @@
  * Return: Always 0
  */
 void rev_string(char *s)
-	{
-	int i = 0;
+{
+	int i;
+	int j;
+	int t;
+	int l;
 
 	while (s[i] != 0)
 	{
-		_putchar(s[i]);
 		i++;
 	}
-	_putchar('\n');
-	while (i > 0)
+
+	l = i;
+	i = 0;
+	j = l - 1;
+
+	while (i < j)
 	{
-		i--;
-		_putchar(s[i]);
+		t = s[i];
+		s[i] = s[j];
+		s[j] = t;
+		i++;
+		j--;
 	}
 }

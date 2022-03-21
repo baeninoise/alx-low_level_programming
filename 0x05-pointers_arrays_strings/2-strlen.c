@@ -1,8 +1,6 @@
 #include "main.h"
-#include <stdio.h>
-#include <string.h>
 /**
- * reset_to_98 - returns the length of a string
+ * strlen - returns the length of a string
  * @s: menber
  *
  * Return: Always 0

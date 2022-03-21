@@ -15,8 +15,7 @@ int i;
 	_putchar('\n');
 	while (i > 0)
 	{
-		i--;
 		_putchar(s[i]);
+		i--;
 	}
-	_putchar('\n');
 }

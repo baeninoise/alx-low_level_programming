@@ -13,7 +13,7 @@ int i, j;
 	_putchar(s[i]);
 	}
 	_putchar('\n');
-	i = j;
+	j = i;
 	while (i >= j)
 	{
 		_putchar(s[i]);

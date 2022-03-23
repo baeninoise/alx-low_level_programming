@@ -1,28 +1,24 @@
 #include "main.h"
-#include <stdio.h>
 /**
- * 2-strncpy.c - copies a string
- * @n: menber
+ * reverse_array - reverses an array
+ * @a: an array of integers
+ * @n: number of elements of an array
  *
- * Return: Always 0
  */
-void reverse_array(int *a, int n);
+void reverse_array(int *a, int n)
 {
 	int i;
-	
+	int temp;
+
 	i = 0;
-	while(i < n)
+	n = n - 1;
+
+	while (i < n)
 	{
-	i++;
-	}
-	while(i < n && i >= 0)
-	{
-	printf("%d", a[i]);
-		if (i == n - 1)
-		{
-		continue;
-		}
-	printf(", ");
-	i--;
+		temp = a[i];
+		a[i] = a[n];
+		a[n] = temp;
+		i++;
+		n--;
 	}
 }

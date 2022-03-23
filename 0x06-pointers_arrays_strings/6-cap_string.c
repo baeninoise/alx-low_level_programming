@@ -17,11 +17,11 @@ char *string_toupper(char *);
 		{
 			str[i] = str[i] - 32;
 		}
-		i++;
 		else
 		{
 		str[i] = str[i];
 		}
+		i++;
 	}
 	return (str);
 }

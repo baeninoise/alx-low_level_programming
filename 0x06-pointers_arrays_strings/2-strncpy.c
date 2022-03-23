@@ -1,28 +1,31 @@
 #include "main.h"
 /**
- * _strncpy - copie the string
- * @dest: array that returns
- * @src: the pointer that receive the string
- * @n: times to interate
+ * _strncat - concatenates two strings
+ * @dest: input parameter string
+ * @src: input parameter string
+ * @n: times to iterations
  *
- * Return: the parameter dest.
+ * Return: dest
  */
-char *_strncpy(char *dest, char *src, int n)
+char *_strncat(char *dest, char *src, int n)
 {
-	int i;
+	int a;
+	int b;
 
-	i = 0;
-	while (i < n && src[i] != '\0')
+	a = 0;
+
+	while (dest[a] != 0)
 	{
-		dest[i] = src[i];
-		i++;
+		a++;
 	}
 
-	i = i;
-	while (i < n)
+	b = 0;
+
+	while (src[b] != 0 && b < n)
 	{
-		dest[i] = '\0';
-		i++;
+		dest[a] = src[b];
+		a++;
+		b++;
 	}
 	return (dest);
 }

@@ -6,14 +6,15 @@
  *
  * Return: Always 0
  */
-char *_strncpy(char *dest, char *src, int n);
-int i, j;
+char *_strncpy(char *dest, char *src, int n)
+{
+	int i, j;
 
 	i = 0;
-	for(j = 0; src[j] != '\0'; j++)
+	for(j = 0; src[j] != '\0'; i++; j++)
 		if(j < n)
 		{
 		dest[i] = src[j];
 		}
-	return(dest);
-	}
+return(dest);
+}

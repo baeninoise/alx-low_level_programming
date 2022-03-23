@@ -18,7 +18,7 @@ void reverse_array(int *a, int n);
 	while(i < n && i >= 0)
 	{
 	printf("%d", a[i]);
-		if (index == n - 1)
+		if (i == n - 1)
 		{
 		continue;
 		}

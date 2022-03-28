@@ -1,11 +1,11 @@
 #include "main.h"
 /**
- * _memset - fills memory with constant byte
- * @s: pointer to the memory area
+ * _memcpy - copies memory area
+ * @src: pointer to the memory area
  * @n: bytes of memory
- * @b: constant byte
+ * @dest: memory area
  *
- * Return: the memory area of s
+ * Return: the memory area 
  */
 char *_memcpy(char *dest, char *src, unsigned int n)
 {
@@ -16,5 +16,5 @@ char *_memcpy(char *dest, char *src, unsigned int n)
 		dest[i] = src[i];
 		i++;
 	}
-	return (dest)
+	return (dest);
 }

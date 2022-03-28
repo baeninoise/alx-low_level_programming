@@ -1,11 +1,11 @@
 #include "main.h"
 /**
- * _memcpy - copies memory area
+ * _strchr - locates a character in a string
  * @s: menber
  * @c: menber
- * Return: a pointer to dest
+ * Return: char
  */
-char *_strchr(char *s, char c);
+char *_strchr(char *s, char c)
 {
 	int i = 0;
 	

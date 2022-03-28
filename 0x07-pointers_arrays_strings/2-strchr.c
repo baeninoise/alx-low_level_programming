@@ -15,6 +15,8 @@ char *_strchr(char *s, char c)
 			return (c);
 		else if(s[i] == '\0')
 			return(NULL);
+		else 
+		continue;
 	i++;
 	}
 }

@@ -9,8 +9,8 @@
  * Return: Always 0
  */
 char *_memset(char *s, char b, unsigned int n)
-	j = int;
+	int i;
 
 	for (i = 1, i<= n, i++)
-		*s[j] = b;
+		*s[i] = b;
 return(*s)

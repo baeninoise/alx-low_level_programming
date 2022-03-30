@@ -4,15 +4,14 @@
  * _print_rev_recursion - prints a string in reverse
  * @s: menber
  *
- * Return: Always 0
+ * Return: void
  */
 void _print_rev_recursion(char *s)
 {
-	while(*s != '\0')
+	if (*s != '\0')
 	{
-		*s++;
-		return ();
+		_print_rev_recursion(s + 1);
+		_putchar(*s);
+
 	}
-	_putchar(*s);
-	_puts_recursion(--s);
 }

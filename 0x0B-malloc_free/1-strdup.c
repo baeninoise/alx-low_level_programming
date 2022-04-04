@@ -2,8 +2,7 @@
 #include <stdlib.h>
 /**
  * _strdup - returns a pointer to a newly allocated space
- * @size: member
- * @c: member
+ * @str: member
  *
  * Return: pointer to the array (Success), NULL (Error)
  */

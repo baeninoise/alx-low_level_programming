@@ -1,27 +1,26 @@
 #include "function_pointers.h"
-#include <stddef.h>
 /**
- * int_index - earches for an integer
- * @array: array to search in
+ * int_index - searches for an integer
+ * @cmp: pointer to the function that compares
  * @size: size of the array
- * @cmp: pointer to the comparing function
+ * @array: array of elements
  *
- * Return: index of the first element for which
- * the cmp function does not return 0, or -1 if no match is found
- * or size is negative
+ * Return: return the index of the first element of the comparison
  */
 int int_index(int *array, int size, int (*cmp)(int))
 {
-	int i;
+	int index;
 
-	if (array && cmp)
+	if (array == NULL || cmp == NULL || size <= 0)
 	{
-		for (i = 0; i < size; i++)
+		return (-1);
+	}
+	for (index = 0 ; index < size ; index++)
+	{
+		if ((*cmp)(array[index]) != 0)
 		{
-			if (*cmp(array[i]) != 0)
-			return (i);
+			return (index);
 		}
 	}
-
 	return (-1);
 }

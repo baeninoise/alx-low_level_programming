@@ -1,12 +1,12 @@
 #include "lists.h"
 
 /**
- * add_nodeint - return len of list
- * @h: linked list of type listint_t to print
+ * listint_len - returns the number of elements in a linked lists
+ * @h: linked list of type listint_t to traverse
  *
  * Return: number of nodes
  */
-listint_t *add_nodeint(listint_t **head, const int n)
+size_t listint_len(const listint_t *h)
 {
 	size_t num = 0;
 
